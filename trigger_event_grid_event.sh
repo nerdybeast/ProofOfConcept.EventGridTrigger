@@ -42,14 +42,14 @@ fi
 if [ "$EVENT_FORMAT" = "EventGridEvent" ]; then
     echo "Sending EventGridEvent format..."
     curl -X POST \
-      "http://localhost:7071/api/EventGridTriggerEmulator" \
+      "http://localhost:8080/api/EventGridTriggerEmulator" \
       -H "Content-Type: application/json" \
       -d '{
-      "id": "d29ebbea-3341-4466-9690-0a03af35228e",
+      "id": "99999999-3341-4466-9690-0a03af35228e",
       "topic": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourcegroups/acse2e/providers/microsoft.communication/communicationservices/{communication-services-resource-name}",
       "subject": "/phonenumber/15555555555",
       "data": {
-        "MessageId": "d29ebbea-3341-4466-9690-0a03af35228e",
+        "MessageId": "99999999-3341-4466-9690-0a03af35228e",
         "From": "15555555555",
         "To": "15555555555",
         "Message": "Great to connect with Azure Communication Services events",
