@@ -42,7 +42,7 @@ fi
 if [ "$EVENT_FORMAT" = "EventGridEvent" ]; then
     echo "Sending EventGridEvent format..."
     curl -X POST \
-      "http://localhost:8080/api/EventGridTriggerEmulator" \
+      "http://localhost:7071/api/EventGridTriggerEmulator" \
       -H "Content-Type: application/json" \
       -d '{
       "id": "99999999-3341-4466-9690-0a03af35228e",
